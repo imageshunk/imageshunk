@@ -2,6 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import { createRouter } from './router'
 
+if (typeof window !==  'undefined') {
+  const carousel = () => import('vue-owl-carousel');
+  Vue.component('carousel', carousel);
+}
+
 Vue.config.productionTip = false
 
 export async function createApp ({
