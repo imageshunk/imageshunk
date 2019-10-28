@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYMENT=/home/nethunk1/public_html/imageshunk/
-    - /bin/cp -R /home/nethunk1/repositories/imageshunk/dist/ $DEPLOYMENT
+    - /bin/cp -R /home/nethunk1/repositories/imageshunk/ $DEPLOYMENT
